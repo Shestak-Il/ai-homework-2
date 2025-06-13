@@ -1,0 +1,63 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafbfc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+th, td {
+  padding: 14px 12px;
+  text-align: left;
+}
+
+th {
+  background: #f4f6f8;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #eaeaea;
+}
+
+tr {
+  transition: background 0.2s;
+}
+
+.row:hover {
+  background: #eaf6ff;
+  cursor: pointer;
+}
+
+.email {
+  color: #888;
+  font-size: 0.95em;
+}
+
+.deleteBtn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn:hover {
+  background: #d9363e;
+}
+
+@media (max-width: 700px) {
+  .table, th, td {
+    font-size: 0.95em;
+    padding: 8px 6px;
+  }
+  th, td {
+    min-width: 80px;
+  }
+} 
